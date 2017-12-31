@@ -6,7 +6,21 @@
 <title>이음터 자리확인</title>
 </head>
 <body>
-
+<div id="vue-root">
+	<div class="card">
+		<div class="card-header">
+			이음터도서관 열람실 잔여좌석
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">일반열람실 좌석수 : {{defaultText}}</li>
+			<li class="list-group-item">학생열람실 좌석수 : {{studentText}}</li>
+			<li class="list-group-item">노트북실 좌석수 : {{notebookText}}</li>
+		</ul>
+	</div>
+	<button type="button" class="btn btn-info" @click="refresh()">새로고침</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue"></script>
 <script src="app.js"></script>
 </body>
 </html>
