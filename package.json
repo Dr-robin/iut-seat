@@ -1,0 +1,13 @@
+{
+  "name": "iut-seat",
+  "version": "1.0.0",
+  "description": "이음터 도서관 자리 보여주는 웹앱",
+  "main": "index.js",
+  "author": "한백고등학교 IT연구부 & HBCOSA",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2"
+  }
+}
