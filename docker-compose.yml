@@ -1,0 +1,9 @@
+version: '2.3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "6943:6943"
