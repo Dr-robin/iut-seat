@@ -2,8 +2,6 @@ version: '2.3'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: 'registry.planet.moe:5000/iut-seat:1.0'
     ports:
       - "6943:6943"
