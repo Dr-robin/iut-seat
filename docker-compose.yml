@@ -2,6 +2,6 @@ version: '2.3'
 
 services:
   app:
-    image: 'registry.planet.moe:5000/iut-seat:1.0'
+    image: 'registry.gitlab.com/dr-robin/iut-seat'
     ports:
-      - "6943:6943"
+      - "80:6943"
