@@ -1,9 +1,9 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-
-app.get('/', async (req, res) => {
+app.get('/seats', async (req, res) => {
 	let result = [];
 	let raws = await Promise.all([
 		axios.get('http://14.33.168.82:8800/seatmate/Seatmate.php?classInfo=1'),
@@ -16,5 +16,6 @@ app.get('/', async (req, res) => {
 	});
 	res.json(result);
 });
+app.use(express.static(__dirname));
 
 app.listen(6943);

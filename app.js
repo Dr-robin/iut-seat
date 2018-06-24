@@ -4,8 +4,7 @@ var app = new Vue({
 	methods: {
 		refresh() {
 			this.ds = [0, 0, 0, 0, 0, 0];
-			jQuery.getJSON('https://iutseat.planet.moe', (data) => {
-				console.log(data);
+			jQuery.getJSON('/seats', (data) => {
 				this.ds = data;
 			});
 		}
